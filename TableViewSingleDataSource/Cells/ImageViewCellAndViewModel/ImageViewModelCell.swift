@@ -11,11 +11,12 @@ import UIKit
 class ImageViewModelCell: NSObject,BaseCellViewModel {
     
     var reusableCellIdentifier: String  = "ImageViewCellIdentifier"
-    var imageName = "https://image.shutterstock.com/image-vector/dots-letter-c-logo-design-600w-551769190.jpg"
-    var label = "abc\nabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc "
+    var imageName:String
+    var label:String
     
-    override init() {
-        
+     init(imageName:String,label:String) {
+        self.imageName = imageName
+        self.label = label
     }
     
 }

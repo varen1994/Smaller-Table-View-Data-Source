@@ -16,7 +16,7 @@ class LabelCellViewModel: NSObject,BaseCellViewModel {
     
     var delegate:LabelCellProtocol?
     var reusableCellIdentifier: String = "LabelCellIdentifier"
-      var label = "abc\nabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc "
+    var label = "Click on the button to Review"
     
     init(_ delegate:LabelCellProtocol?) {
         self.delegate = delegate

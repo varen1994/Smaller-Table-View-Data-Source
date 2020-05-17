@@ -28,7 +28,6 @@ class LabelCell: UITableViewCell, BaseCellClass {
 
     }
     
-    
     @IBAction func clickedOnButton(_ sender: Any) {
         if let viewModel = viewModel as? LabelCellViewModel {
             viewModel.clickedOnButton()

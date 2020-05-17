@@ -8,21 +8,21 @@
 
 import UIKit
 
-public protocol BaseCellClass {
+ protocol BaseCellClass {
     var viewModel: BaseCellViewModel? { get set }
     func initWithViewModel(viewModel: BaseCellViewModel)
 }
 
-public protocol BaseControllerSetup {
+ protocol BaseControllerSetup {
     func registerAllCellsInTableView()
     func setUpAllTheData()
 }
 
-public protocol BaseTableViewProtocol {
+ protocol BaseTableViewProtocol {
     func didSelectedCell(indexPath:IndexPath,viewModel:BaseCellViewModel?);
 }
 
-public protocol BaseCellViewModel: NSObject {
+ protocol BaseCellViewModel: NSObject {
     var reusableCellIdentifier: String { get set }
 }
 

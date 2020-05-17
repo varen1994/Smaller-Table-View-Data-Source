@@ -27,8 +27,7 @@ class HeaderTableView: UIView {
         Bundle.main.loadNibNamed("HeaderXib", owner: self, options: nil)
         addSubview(self.customView)
         self.customView.frame = self.frame
-        self.customView.backgroundColor = UIColor.orange
-        self.labelText.text = "Ganga"
+        self.labelText.text = "Medium."
     }
 
 }

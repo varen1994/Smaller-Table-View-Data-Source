@@ -10,7 +10,7 @@
         <scene sceneID="p6J-WH-HFf">
             <objects>
                 <tableViewController id="GZP-ze-BOJ" customClass="ViewController" customModule="TableViewSingleDataSource" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Tlx-O5-M5i">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="Tlx-O5-M5i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -23,15 +23,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-FV-5pA">
-                                            <rect key="frame" x="20" y="348" width="374" height="100"/>
+                                            <rect key="frame" x="20" y="388" width="374" height="60"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-P7-TBn">
-                                            <rect key="frame" x="20" y="28" width="374" height="300"/>
+                                            <rect key="frame" x="20" y="28" width="374" height="340"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="300" id="EnF-h1-h67"/>
+                                                <constraint firstAttribute="height" constant="340" id="EnF-h1-h67"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -45,7 +45,7 @@
                                         <constraint firstAttribute="trailing" secondItem="F0d-P7-TBn" secondAttribute="trailing" constant="20" id="nk9-ZJ-Ova"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="0.72030179790000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="imageViewLogo" destination="F0d-P7-TBn" id="BHd-kQ-d1f"/>
                                     <outlet property="label" destination="OfE-FV-5pA" id="7P6-mt-1pT"/>
@@ -71,13 +71,13 @@
                                                 <constraint firstAttribute="height" constant="30" id="MyH-eH-tgg"/>
                                                 <constraint firstAttribute="width" constant="100" id="Qfs-1U-w3Z"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="Click Me!"/>
                                             <connections>
                                                 <action selector="clickedOnButton:" destination="cJj-ao-zl2" eventType="touchUpInside" id="FF5-sm-16u"/>
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="hq6-61-1H1" firstAttribute="centerY" secondItem="RFE-df-oC6" secondAttribute="centerY" id="0XU-GT-NlO"/>
                                         <constraint firstItem="hq6-61-1H1" firstAttribute="leading" secondItem="nzn-l5-hz8" secondAttribute="trailing" constant="20" id="JJM-zn-hGk"/>
@@ -87,6 +87,7 @@
                                         <constraint firstAttribute="bottom" secondItem="nzn-l5-hz8" secondAttribute="bottom" constant="20" id="irX-z3-EOL"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="label" destination="nzn-l5-hz8" id="Qug-8d-8F3"/>
                                 </connections>
