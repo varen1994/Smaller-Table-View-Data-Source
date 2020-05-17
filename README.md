@@ -8,6 +8,9 @@ breaking the confusion of if else inside this method we should write a Single Da
 
 ## Requirements for the implementation
 
+### Cell Size
+Each cell inside the table should be given a automatic height  by settings the constraints .
+
 ### BaseListingViewModel 
 
 This base class contains the section header and section footer height and views. 

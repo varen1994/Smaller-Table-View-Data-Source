@@ -24,7 +24,6 @@ class HeaderTableView: UIView {
     }
     
     func customInit() {
-        print("----- common Init called -------")
         Bundle.main.loadNibNamed("HeaderXib", owner: self, options: nil)
         addSubview(self.customView)
         self.customView.frame = self.frame

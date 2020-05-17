@@ -17,12 +17,9 @@ class ViewController: UITableViewController,BaseControllerSetup,LabelCellProtoco
         super.viewDidLoad()
         registerAllCellsInTableView()
         setUpAllTheData()
-        // Do any additional setup after loading the view.
     }
 
     func registerAllCellsInTableView() {
-//        self.tableView.register(ImageViewCell.self, forCellReuseIdentifier: "ImageViewCellIdentifier")
-//        self.tableView.register(LabelCell.self, forCellReuseIdentifier: "LabelCellIdentifier")
     }
       
     func setUpAllTheData() {
