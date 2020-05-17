@@ -1,0 +1,11 @@
+framework module VSTableViewSingleDataSource {
+  umbrella header "VSTableViewSingleDataSource.h"
+
+  export *
+  module * { export * }
+}
+
+module VSTableViewSingleDataSource.Swift {
+    header "VSTableViewSingleDataSource-Swift.h"
+    requires objc
+}
