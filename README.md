@@ -1,4 +1,4 @@
-# Table View Single Data Source
+# Smaller Table View Data Source
  
  Design Patterns can be quite complex to understand such as MVC and the major time developer spends in showing static list of data in a tableview and the complexity increases exponentially when we start writing implementation of 
  
@@ -136,3 +136,7 @@ protocol BaseTableViewProtocol {
 }
 
 ```
+
+## Improvements
+
+A change in data from cell to controller can be passed by viewmodels.
